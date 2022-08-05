@@ -28,7 +28,6 @@ export default App = () => {
     try{
       const resp = await api.get(`/${Number(cep)}/json`)
       setEndereco(resp.data)
-      console.log('resp',resp.data)
     }catch(err){
       console.log('ERROR: '+err)
     }
